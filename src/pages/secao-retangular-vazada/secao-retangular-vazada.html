@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Seção Retangular Vazada</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <img src="assets/imgs/secao-retangular-vazada-formulario.png">
+
+  <form>
+    <ion-item>
+      <ion-label stacked>Largura - B</ion-label>
+      <ion-input [(ngModel)]="secaoRetangularVazada.larguraExterna" name="Largura Externa"  type="larguraExterna"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Altura - H</ion-label>
+      <ion-input [(ngModel)]="secaoRetangularVazada.alturaExterna" name="Altura Externa" type="alturaExterna"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Largura - b</ion-label>
+      <ion-input [(ngModel)]="secaoRetangularVazada.larguraInterna" name="Largura Interna" type="larguraInterna"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Altura - h</ion-label>
+      <ion-input [(ngModel)]="secaoRetangularVazada.alturaInterna" name="Altura Interna" type="alturaInterna"></ion-input>
+    </ion-item>
+    <button ion-button block (click)="calcular()">Calcular</button>
+  </form>
+
+</ion-content>

@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Propriedades</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col> Área da Seção </ion-col>
+      <ion-col> {{propriedades.area}} </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col> Posição do Centroid X </ion-col>
+      <ion-col> {{propriedades.cx}} </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col> Posição do Centroid Y </ion-col>
+      <ion-col> {{propriedades.cy}} </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col> Momento de Inércia Ixx </ion-col>
+      <ion-col> {{propriedades.inerciaxx}} </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col> Momento de Inércia Iyy </ion-col>
+      <ion-col> {{propriedades.inerciayy}} </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

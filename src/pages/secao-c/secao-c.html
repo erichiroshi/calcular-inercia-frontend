@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Seção em C</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <img src="assets/imgs/secao-c-formulario.png">
+
+  <form>
+    <ion-item>
+      <ion-label stacked>Altura da Alma - H</ion-label>
+      <ion-input [(ngModel)]="secaoC.alturaAlma" name="alturaAlma" type="Altura Ala"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Espessura da Alma - b</ion-label>
+      <ion-input [(ngModel)]="secaoC.espessuraAlma" name="espessuraAlma" type="Espessura Alma"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Largura da Aba - B</ion-label>
+      <ion-input [(ngModel)]="secaoC.larguraAba" name="larguraAba" type="Largura Aba"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Espessura da Aba - h</ion-label>
+      <ion-input [(ngModel)]="secaoC.espessuraAba" name="espessuraAba" type="Espessura Aba"></ion-input>
+    </ion-item>
+    <button ion-button block (click)="calcular()">Calcular</button>
+  </form>
+
+</ion-content>

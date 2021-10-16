@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Seção Circular Vazada</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <img src="assets/imgs/secao-circular-vazada-formulario.png">
+
+  <form>
+    <ion-item>
+      <ion-label stacked>Diâmetro Maior - D</ion-label>
+      <ion-input [(ngModel)]="secaoCircularVazada.diametroExterno" name="diametroExterno" type="Diametro Externo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Diâmetro Menor - d</ion-label>
+      <ion-input [(ngModel)]="secaoCircularVazada.diametroInterno" name="diametroInterno" type="Diametro Interno"></ion-input>
+    </ion-item>
+    <button ion-button block (click)="calcular()">Calcular</button>
+  </form>
+
+</ion-content>
