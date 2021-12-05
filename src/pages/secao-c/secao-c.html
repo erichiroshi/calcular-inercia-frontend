@@ -11,19 +11,19 @@
   <form>
     <ion-item>
       <ion-label stacked>Altura da Alma - H</ion-label>
-      <ion-input [(ngModel)]="secaoC.alturaAlma" name="alturaAlma" type="Altura Ala"></ion-input>
+      <ion-input [(ngModel)]="secaoC.alturaAlma" name="alturaAlma" type="number"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label stacked>Espessura da Alma - b</ion-label>
-      <ion-input [(ngModel)]="secaoC.espessuraAlma" name="espessuraAlma" type="Espessura Alma"></ion-input>
+      <ion-input [(ngModel)]="secaoC.espessuraAlma" name="espessuraAlma" type="number"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label stacked>Largura da Aba - B</ion-label>
-      <ion-input [(ngModel)]="secaoC.larguraAba" name="larguraAba" type="Largura Aba"></ion-input>
+      <ion-input [(ngModel)]="secaoC.larguraAba" name="larguraAba" type="number"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label stacked>Espessura da Aba - h</ion-label>
-      <ion-input [(ngModel)]="secaoC.espessuraAba" name="espessuraAba" type="Espessura Aba"></ion-input>
+      <ion-input [(ngModel)]="secaoC.espessuraAba" name="espessuraAba" type="number"></ion-input>
     </ion-item>
     <button ion-button block (click)="calcular()">Calcular</button>
   </form>

@@ -14,11 +14,11 @@
   <form>
     <ion-item>
       <ion-label stacked>Largura - A</ion-label>
-      <ion-input [(ngModel)]="secaoRetangular.largura" name="Largura" type="Largura"></ion-input>
+      <ion-input [(ngModel)]="secaoRetangular.largura" name="Largura" type="number"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label stacked>Altura - B</ion-label>
-      <ion-input [(ngModel)]="secaoRetangular.altura" name="Altura" type="Altura"></ion-input>
+      <ion-input [(ngModel)]="secaoRetangular.altura" name="Altura" type="number"></ion-input>
     </ion-item>
     <button ion-button block (click)="calcular()">Calcular</button>
   </form>

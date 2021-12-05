@@ -11,11 +11,11 @@
   <form>
     <ion-item>
       <ion-label stacked>Diâmetro Maior - D</ion-label>
-      <ion-input [(ngModel)]="secaoCircularVazada.diametroExterno" name="diametroExterno" type="Diametro Externo"></ion-input>
+      <ion-input [(ngModel)]="secaoCircularVazada.diametroExterno" name="diametroExterno" type="number"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label stacked>Diâmetro Menor - d</ion-label>
-      <ion-input [(ngModel)]="secaoCircularVazada.diametroInterno" name="diametroInterno" type="Diametro Interno"></ion-input>
+      <ion-input [(ngModel)]="secaoCircularVazada.diametroInterno" name="diametroInterno" type="number"></ion-input>
     </ion-item>
     <button ion-button block (click)="calcular()">Calcular</button>
   </form>
